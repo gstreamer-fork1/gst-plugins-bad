@@ -32,6 +32,7 @@
 #include "gstedgedetect.h"
 #include "gstfaceblur.h"
 #include "gstfacedetect.h"
+#include "gsthomography.h"
 #include "gstmotioncells.h"
 #include "gsttemplatematch.h"
 #include "gsttextoverlay.h"
@@ -72,6 +73,7 @@ plugin_init (GstPlugin * plugin)
   ret |= GST_ELEMENT_REGISTER (dewarp, plugin);
   ret |= GST_ELEMENT_REGISTER (cameracalibrate, plugin);
   ret |= GST_ELEMENT_REGISTER (cameraundistort, plugin);
+  ret |= GST_ELEMENT_REGISTER (homography, plugin);
 
   return ret;
 }
