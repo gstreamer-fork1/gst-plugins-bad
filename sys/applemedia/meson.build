@@ -36,13 +36,13 @@ if ['darwin', 'ios'].contains(host_system)
 endif
 
 applemedia_frameworks = []
-corefoundation_dep = dependency('CoreFoundation', required : applemedia_option)
-coremedia_dep = dependency('CoreMedia', required : applemedia_option)
-corevideo_dep = dependency('CoreVideo', required : applemedia_option)
-audiotoolbox_dep = dependency('AudioToolbox', required : applemedia_option)
+corefoundation_dep = dependency('appleframeworks', modules : ['CoreFoundation'], required : applemedia_option)
+coremedia_dep = dependency('appleframeworks', modules : ['CoreMedia'], required : applemedia_option)
+corevideo_dep = dependency('appleframeworks', modules : ['CoreVideo'], required : applemedia_option)
+audiotoolbox_dep = dependency('appleframeworks', modules : ['AudioToolbox'], required : applemedia_option)
 applemedia_frameworks += [corefoundation_dep, coremedia_dep, corevideo_dep, audiotoolbox_dep]
 
-avfoundation_dep = dependency('AVFoundation', required : applemedia_option)
+avfoundation_dep = dependency('appleframeworks', modules : ['AVFoundation'], required : applemedia_option)
 if avfoundation_dep.found()
     applemedia_sources += [
         'avfvideosrc.m',
@@ -53,7 +53,7 @@ if avfoundation_dep.found()
     applemedia_frameworks += [avfoundation_dep]
 endif
 
-videotoolbox_dep = dependency('VideoToolbox', required : applemedia_option)
+videotoolbox_dep = dependency('appleframeworks', modules : ['VideoToolbox'], required : applemedia_option)
 if videotoolbox_dep.found()
     applemedia_sources += [
         'vtenc.c',
@@ -76,8 +76,8 @@ else
     applemedia_sources += [
         'iosurfaceglmemory.c'
     ]
-    cocoa_dep = dependency('Cocoa', required : applemedia_option)
-    iosurface_dep = dependency('IOSurface', required : applemedia_option)
+    cocoa_dep = dependency('appleframeworks', modules : ['Cocoa'], required : applemedia_option)
+    iosurface_dep = dependency('appleframeworks', modules : ['IOSurface'], required : applemedia_option)
     applemedia_opengl_dep = dependency('appleframeworks', modules : ['OpenGL'], required : applemedia_option)
     applemedia_frameworks += [cocoa_dep, applemedia_opengl_dep, iosurface_dep]
 endif

@@ -383,7 +383,7 @@ if ['darwin', 'ios'].contains(host_system)
     cdata.set('HAVE_IOS', 1)
   endif
 
-  avfoundation_dep = dependency('AVFoundation', required : false)
+  avfoundation_dep = dependency('appleframeworks', modules : 'AVFoundation', required : false)
   if avfoundation_dep.found()
       cdata.set('HAVE_AVFOUNDATION', 1)
   endif
