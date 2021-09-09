@@ -1,3 +1,9 @@
+gst-plugins-bad1.0 (1.17.2+20210621pexip-1) pexip-bullseye; urgency=medium
+
+  * Build for pexip-bullseye.
+
+ -- Daniel Pocock <daniel@pocock.pro>  Thu, 09 Sep 2021 20:17:30 +0200
+
 gst-plugins-bad1.0 (1.17.2-1) experimental; urgency=medium
 
   [ Debian Janitor ]
