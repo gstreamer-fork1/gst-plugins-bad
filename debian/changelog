@@ -1,18 +1,40 @@
-gst-plugins-bad1.0 (1.16.0-3) unstable; urgency=medium
+gst-plugins-bad1.0 (1.17.2-1) experimental; urgency=medium
 
-  * Source-only re-upload
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Set upstream metadata fields: Bug-Database, Name (from ./configure),
+    Repository, Repository-Browse.
 
- -- Sebastian Dröge <slomo@debian.org>  Mon, 02 Sep 2019 10:31:31 +0300
+  [ Laurent Bigonville ]
+  * Only build the opencv plugin on architecture where opencv is available
+  * Install the opencv haarcascades files in the opencv plugin package
+  * d/p/02_opencv-data-path.patch: Fix paths for the haarcascades files
+    (Closes: #956518)
+  * debian/control.in: Bump from Priority: extra to optional, the former is
+    deprecated
 
-gst-plugins-bad1.0 (1.16.0-2) unstable; urgency=medium
+  [ Sebastian Dröge ]
+  * New upstream development release.
+  * Completely redo and modernize the packaging.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 06 Jul 2020 09:30:58 +0300
+
+gst-plugins-bad1.0 (1.16.2-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Upload patch to fix build with newer opencv (Closes: #922583)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 05 Feb 2020 22:46:23 +0100
+
+gst-plugins-bad1.0 (1.16.2-2) unstable; urgency=medium
 
   * debian/build-deps.in,
     debian/rules,
     debian/gstreamer-plugins-bad.install:
     + Build and ship SRT plugin.
-  * Upload to unstable
 
- -- Sebastian Dröge <slomo@debian.org>  Thu, 18 Jul 2019 11:53:43 +0300
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 12 Jul 2019 09:21:34 +0300
 
 gst-plugins-bad1.0 (1.16.0-1) experimental; urgency=medium
 
@@ -1027,7 +1049,7 @@ gst-plugins-bad0.10 (0.10.22-1) unstable; urgency=low
   * New upstream release, "Toy Piano":
     + debian/patches/99_decklink.patch,
       debian/patches/99_decklink-linking.patch:
-      - Dropped, merged upstream.    
+      - Dropped, merged upstream.
     + debian/rules,
       debian/build-deps.in:
       - Build-depend on GStreamer core/base 0.10.33.
@@ -1335,7 +1357,7 @@ gst-plugins-bad0.10 (0.10.17.2-1) experimental; urgency=low
     + debian/gstreamer-plugins-bad.install,
       debian/build-deps.in:
       - Add adpcmdec, adpcmenc, dataurisrc, flite, jpegformat plugins.
-      - Remove shapewipe plugin, it was moved to gst-plugins-good. 
+      - Remove shapewipe plugin, it was moved to gst-plugins-good.
     + debian/patches/01_cog-orc-memcpy.patch,
       debian/patches/02_cog-link-lm.patch,
       debian/patches/03_frei0r.patch:
@@ -2056,7 +2078,7 @@ gst-plugins-bad0.10 (0.10.5.2-1) experimental; urgency=low
       - Add and update a few build dependencies.
     + debian/gstreamer-plugins-bad.install:
       - Add dvdspu, festival, flv, mpegtsparse, mpeg4videoparse, rawparse,
-        sdp, selector, speexresample, stereo, fbdev, metadata, vcd plugins. 
+        sdp, selector, speexresample, stereo, fbdev, metadata, vcd plugins.
       - Remove equalizer, multifile, spectrum, switch, videoparse, xingheader
         plugins. These have moved to other places now.
       - Sort everything alphabetically.
