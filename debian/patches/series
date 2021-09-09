@@ -2,3 +2,4 @@
 03-vulkan.patch
 04-openh264-wels.patch
 05-gstrtmpsink-librtmp.patch
+06-vl2-a0cd455dd0e0375c6395fe732173225ea7e18562.patch
