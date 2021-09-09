@@ -24,7 +24,6 @@ debian/tmp/usr/lib/*/gstreamer-1.0/libgstdash.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstdebugutilsbad.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstdtls.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstdtsdec.so
-debian/tmp/usr/lib/*/gstreamer-1.0/libgstdvbsubenc.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstdvbsuboverlay.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstdvdspu.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstfaad.so
@@ -117,5 +116,6 @@ debian/tmp/usr/lib/*/gstreamer-1.0/libgstwildmidi.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstx265.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgsty4mdec.so
 debian/tmp/usr/lib/*/gstreamer-1.0/libgstzbar.so
+debian/tmp/usr/lib/*/gstreamer-1.0/libgstopenh264.so
 debian/tmp/usr/share/locale
 debian/tmp/usr/share/gstreamer-1.0/presets/
