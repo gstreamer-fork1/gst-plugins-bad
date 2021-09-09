@@ -55,6 +55,8 @@ override_dh_makeshlibs:
 override_dh_install:
 	dh_install
 
+override_dh_missing:
+
 ifeq ($(DEB_HOST_ARCH_OS),linux)
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstdvb.so
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstfbdevsink.so
