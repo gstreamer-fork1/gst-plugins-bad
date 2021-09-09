@@ -1,0 +1,49 @@
+diff --git a/ext/openh264/gstopenh264dec.cpp b/ext/openh264/gstopenh264dec.cpp
+index 3ed12c9a2e..e1572628e1 100644
+--- a/ext/openh264/gstopenh264dec.cpp
++++ b/ext/openh264/gstopenh264dec.cpp
+@@ -29,7 +29,7 @@
+ 
+ #include "gstopenh264dec.h"
+ 
+-#include <wels/codec_ver.h>
++#include <openh264/codec_ver.h>
+ #define OPENH264_VERSION_CHECK(maj,min) ((OPENH264_MAJOR > (maj)) || (OPENH264_MAJOR == (maj) && OPENH264_MINOR >= (min)))
+ 
+ #include <gst/gst.h>
+diff --git a/ext/openh264/gstopenh264dec.h b/ext/openh264/gstopenh264dec.h
+index 7d045b889e..4ca12e2c78 100644
+--- a/ext/openh264/gstopenh264dec.h
++++ b/ext/openh264/gstopenh264dec.h
+@@ -33,9 +33,9 @@
+ #include <gst/video/video.h>
+ #include <gst/video/gstvideodecoder.h>
+ 
+-#include <wels/codec_api.h>
+-#include <wels/codec_app_def.h>
+-#include <wels/codec_def.h>
++#include <openh264/codec_api.h>
++#include <openh264/codec_app_def.h>
++#include <openh264/codec_def.h>
+ 
+ G_BEGIN_DECLS
+ 
+diff --git a/ext/openh264/gstopenh264enc.h b/ext/openh264/gstopenh264enc.h
+index 334b302501..6d6f3c6116 100644
+--- a/ext/openh264/gstopenh264enc.h
++++ b/ext/openh264/gstopenh264enc.h
+@@ -33,10 +33,10 @@
+ #include <gst/video/video.h>
+ #include <gst/video/gstvideoencoder.h>
+ 
+-#include <wels/codec_api.h>
+-#include <wels/codec_app_def.h>
+-#include <wels/codec_def.h>
+-#include <wels/codec_ver.h>
++#include <openh264/codec_api.h>
++#include <openh264/codec_app_def.h>
++#include <openh264/codec_def.h>
++#include <openh264/codec_ver.h>
+ 
+ G_BEGIN_DECLS
+ 
