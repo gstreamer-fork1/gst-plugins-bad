@@ -63,6 +63,7 @@ ifeq ($(DEB_HOST_ARCH_OS),linux)
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstdc1394.so
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstdecklink.so
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstuvch264.so
+	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstopenh264.so
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstbluez.so
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstsbc.so
 	dh_install -pgstreamer1.0-plugins-bad debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gstreamer-1.0/libgstwaylandsink.so
